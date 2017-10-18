@@ -1,0 +1,33 @@
+
+/* Typography */
+
+h1, h2, h3, h4 {
+
+	font-family: $titleFontFamily;
+	font-weight: $titleFontWeight;
+
+	@media (max-width: $mobileLargePortrait) {
+
+		text-align: center;
+
+	}
+
+}
+
+h1 {
+
+	font-size: 48px;
+
+	span {
+
+		color: $lightBlue;
+
+	}
+
+}
+
+body {
+
+	font-family: $bodyFontFamily;
+
+}

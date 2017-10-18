@@ -1,0 +1,468 @@
+
+/* Sections */
+
+section {
+
+	position: relative;
+	padding: 15px 0;
+	// overflow-x: hidden;
+
+	.container {
+
+		.row {
+
+			div {
+
+				h2 {
+
+					text-align: center;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+section[role="default"] {
+
+	padding: 80px 0 30px;
+	min-height: 100vh;
+
+	.container {
+
+		h1 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+		.grid {
+
+			.item {
+
+				.wrapper {
+
+					div {
+
+						h1, h2, h3, h4 {
+
+							color: $white;
+
+						}
+
+						p {
+
+							color: $white;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			@media (max-width: $mobileLargePortrait) {
+
+  				min-height: 100vh;
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: $tabletPortrait) {
+
+  		padding: 40px 0 30px;
+
+	}
+
+	@media (max-width: $mobileLargeLandscape) {
+
+  		padding: 40px 0 30px;
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+  		padding: 40px 0 30px;
+
+	}
+
+}
+
+section[role="highlight"] {
+
+	background: $darkBlue;
+	padding: 15px 0;
+
+	.container {
+
+		.grid {
+
+			.item {
+
+				color: $white;
+
+				h1, h2, h3, h4 {
+
+					text-align: center;
+
+				}
+
+				img {
+
+					align-items: left;
+					align-content: left;
+
+				}
+
+				p {
+
+					width: auto;
+
+				}
+
+			}
+
+		}
+
+		.carousel {
+
+			.carousel-inner {
+
+				.item {
+
+					.row {
+
+						div {
+
+							.post {
+
+								margin: 0;
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+section[role="post"] {
+
+	padding: 80px 0 30px;
+
+	.container {
+
+		h1, h2, h3, h4 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+		.grid {
+
+			.item {
+
+				min-height: 1px;
+
+				h1, h2, h3, h4 {
+
+					color: $darkBlue;
+
+				}
+
+				p {
+
+					float: left;
+					width: auto;
+
+				}
+
+				div {
+
+					width: 100%;
+
+					h1, h2, h3, h4 {
+
+						color: $darkBlue;
+
+					}
+
+					header {
+
+						width: 100%;
+
+						h1, h2, h3, h4 {
+
+							text-align: center;
+							color: $darkBlue;
+
+						}
+
+						ul {
+
+							list-style-type: none;
+							padding: 15px 0;
+							margin: 15px 0;
+							border-top: 1px solid $darkBlue;
+							border-bottom: 1px solid $darkBlue;
+							color: $darkBlue;
+
+							li {
+
+								display: inline;
+								list-style-type: none;
+								
+								&:after {
+
+									content: " | ";
+									padding: 0 5px 0 5px;
+
+								}
+
+								&:last-child {
+
+									padding: 0;
+
+								}
+
+								&:last-child:after {
+
+									content: "";
+									padding: 0;
+
+								}
+
+							}
+
+						}
+
+						span {
+
+							a {
+
+								color: $lightBlue;
+
+								&:hover, &:focus {
+
+									color: $darkBlue;
+
+								}
+
+								time {
+
+									padding: 0 5px 0 0;
+
+									&:last-child {
+
+										padding: 0;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+				ul {
+
+					list-style-type: disc;
+
+					li {
+
+						list-style-type: disc;
+
+					}
+
+				}
+
+			}
+
+			.post-details {
+
+				text-align: center;
+
+				h1, h2, h3, h4 {
+
+					text-align: center;
+					color: $darkBlue;
+
+				}
+
+				p {
+
+					text-align: center;
+
+					a {
+
+						color: $darkBlue;
+
+					}
+
+				}
+
+				ul {
+
+					list-style-type: none;
+					border-top: 1px solid $darkBlue;
+					border-bottom: 1px solid $darkBlue;
+					padding: 15px 0;
+					text-align: center;
+
+					li {
+
+						color: $darkBlue;
+
+					}
+
+				}
+
+			}
+
+			.post-preview {
+
+				position: relative;
+
+				img {
+
+					@media (max-width: $tabletPortrait) {
+
+						display: block;
+						margin: 0 auto;
+
+					}
+
+				}
+
+				.fa-play-circle {
+
+					position: absolute;
+					font-size: 10em;
+					opacity: 0.5;
+					color: $white;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 60px 0 30px;
+
+	}
+
+}
+
+section[role="explore"] {
+
+	.container {
+
+		.row {
+
+			div {
+
+				color: $gray;
+
+			}
+
+		}
+
+		h1 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+	}
+
+}
+
+section[role="all"] {
+
+	padding: 80px 0 30px;
+
+	.container {
+
+		.grid {
+
+			.item {
+
+				color: $gray;
+
+				&:nth-of-type(2) {
+
+					.post-caption {
+
+						background: $green;
+
+					}
+
+				}
+
+				&:nth-of-type(3) {
+
+					.post-caption {
+
+						background: $purple;
+
+					}
+
+				}
+
+				&:nth-of-type(4) {
+
+					.post-caption {
+
+						background: $pink;
+
+					}
+
+				}
+
+			}
+
+		}
+
+		h1 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+		padding: 100px 0 30px;
+
+	}
+
+}

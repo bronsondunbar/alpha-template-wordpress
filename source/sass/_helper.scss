@@ -1,0 +1,64 @@
+
+/* Scroll helper */
+
+.scroll-helper,
+.scroll-helper:before {
+
+	position: absolute;
+	left: 50%;
+
+}
+  
+
+.scroll-helper {
+
+	width: 25px;
+	height: 40px;
+	margin-left: -20px;
+	top: 97%;
+	margin-top: -35px;
+	box-shadow: inset 0 0 0 1px $darkBlue;
+	border-radius: 25px;
+	z-index: 9999;
+
+	@media (max-width: $mobileLargePortrait) {
+
+		top: 94%;
+
+	}
+
+}
+  
+
+.scroll-helper:before {
+
+	content: '';
+	width: 8px;
+	height: 8px;
+	background: $darkBlue;
+	margin-left: -4px;
+	top: 8px;
+	border-radius: 4px;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-name: scroll-animation;
+
+}
+  
+
+@keyframes scroll-animation {
+
+	0% {
+
+    	opacity: 1;
+
+	}
+
+	100% {
+
+		opacity: 0;
+	    transform: translateY(16px);
+
+	}
+	    
+}

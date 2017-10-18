@@ -1,0 +1,108 @@
+
+/* Grid */
+
+.grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px;
+
+  .item {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 15%;
+    margin: 15px;
+    padding: 15px;
+    transition: all 0.3s;
+
+    h1, h2, h3, h4 {
+
+        text-align: center;
+        font-weight: 400;
+        width: 100%;
+
+    }
+
+    form, p, a, ul {
+
+        width: 100%;
+
+    }
+
+    li {
+
+      list-style-type: none;
+
+    }
+
+    i {
+
+        text-align: center;
+        width: 100%;
+        margin: 0 0 10px;
+
+    }
+
+    @media (max-width: $tabletPortrait) {
+
+        min-width: 90%;
+
+    }
+
+    @media (max-width: $mobileLargeLandscape) {
+
+        min-width: 90%;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
+
+        min-width: 90%;
+
+    }
+
+  }
+
+  .post {
+
+    min-width: 25%;
+    padding: 0;
+
+    @media (max-width: $tabletPortrait) {
+
+        min-width: 50%;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
+
+        min-width: 100%;
+
+    }
+
+  }
+
+  .carousel-post {
+
+    max-width: 30.6%;
+
+  }
+
+  @media (max-width: $tabletPortrait) {
+
+    min-width: 50%;
+
+  }
+
+  @media (max-width: $mobileLargePortrait) {
+
+    min-width: 100%;
+
+  }
+
+}
