@@ -1,1 +1,1 @@
-# alpha-template-wordpress
+# Alpha template for Wordpress
