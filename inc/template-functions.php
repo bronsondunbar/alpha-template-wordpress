@@ -448,24 +448,47 @@ function all_posts () {
 
 		        foreach($chunk as $post):
 
-		        	$postHighlights .= '<div class="item post">';
-		      		$postHighlights .= '<a href="' . get_permalink() . '">';
+		        	if (get_the_post_thumbnail() !== "") {
 
-		      		if (get_the_post_thumbnail() !== "") {
-		      			$postHighlights .= '<img src="' . get_the_post_thumbnail_url() . '" class="img-responsive" alt="" />';
-		      		}
+		        		$postHighlights .= '<div class="item post">';
+			      		$postHighlights .= '<a href="' . get_permalink() . '">';
 
-		      		$postHighlights .= '</a>';
-		      		$postHighlights .= '<div class="post-caption">';
-		          	$postHighlights .= '<h4>' . get_the_title($post->ID) . '</h4>';
+			      		$postHighlights .= '<img src="' . get_the_post_thumbnail_url() . '" class="img-responsive" alt="" />';
 
-		          	if (get_the_category($post->ID)[0]->name != "Uncategorized") {
-		      			$postHighlights .= '<p>' . get_the_category($post->ID)[0]->name . '</p>';
-		      		}
+			      		$postHighlights .= '</a>';
+			      		$postHighlights .= '<div class="post-caption">';
+			          	$postHighlights .= '<h4>' . get_the_title($post->ID) . '</h4>';
 
-		          	$postHighlights .= '<a href="' . get_permalink() . '" class="btn btn-default">Read more</a>';
-		          	$postHighlights .= '</div>';
-		          	$postHighlights .= '</div>';
+			          	if (get_the_category($post->ID)[0]->name != "Uncategorized") {
+			      			$postHighlights .= '<p>' . get_the_category($post->ID)[0]->name . '</p>';
+			      		}
+
+			          	$postHighlights .= '<a href="' . get_permalink() . '" class="btn btn-default">Read more</a>';
+			          	$postHighlights .= '</div>';
+			          	$postHighlights .= '</div>';
+
+		        	} else {
+
+		        		$postHighlights .= '<div class="item post">';
+			      		$postHighlights .= '<a href="' . get_permalink() . '">';
+
+		        		$postHighlights .= '<a href="' . get_permalink() . '">';
+			      		$postHighlights .= '<div class="post-image"><i class="fa fa-4x fa-picture-o" aria-hidden="true"></i></div>';
+			      		$postHighlights .= '</a>';
+
+			      		$postHighlights .= '</a>';
+			      		$postHighlights .= '<div class="post-caption">';
+			          	$postHighlights .= '<h4>' . get_the_title($post->ID) . '</h4>';
+
+			          	if (get_the_category($post->ID)[0]->name != "Uncategorized") {
+			      			$postHighlights .= '<p>' . get_the_category($post->ID)[0]->name . '</p>';
+			      		}
+
+			          	$postHighlights .= '<a href="' . get_permalink() . '" class="btn btn-default">Read more</a>';
+			          	$postHighlights .= '</div>';
+			          	$postHighlights .= '</div>';
+
+		        	}
 
 		        endforeach;
 
