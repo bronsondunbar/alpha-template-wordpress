@@ -1,81 +1,56 @@
-=== Twenty Seventeen ===
-Contributors: the WordPress team
+=== Alpha WordPress Theme ===
+Contributors: Bronson Dunbar
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9-trunk
-Version: 1.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Version: 1.0
+Tags: bootstrap, jquery, responsive, personal, website, blog
 
 == Description ==
 
-Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
-
-For more information about Twenty Seventeen please go to https://codex.wordpress.org/Twenty_Seventeen.
+Responsive personal website/blog WordPress theme created with the Bootstrap framework.
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Twenty Seventeen in the search form and press the 'Enter' key on your keyboard.
-3. Click on the 'Activate' button to use your new theme right away.
-4. Go to https://codex.wordpress.org/Twenty_Seventeen for a guide on how to customize this theme.
-5. Navigate to Appearance > Customize in your admin panel and customize to taste.
+2. Choose Upload Theme.
+3. Select alpha.zip.
+4. Click Install Now.
+5. Once installed, click Activate.
 
 == Copyright ==
 
-Twenty Seventeen WordPress Theme, Copyright 2016 WordPress.org
-Twenty Seventeen is distributed under the terms of the GNU GPL
+Alpha WordPress Theme, Copyright 2017 Bronson Dunbar
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
+Alpha bundles the following third-party resources:
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+JQuery 1.12.4, Copyright The jQuery Team
+Licenses: MIT
+Source: https://jquery.org/
 
-Twenty Seventeen bundles the following third-party resources:
-
-HTML5 Shiv, Copyright 2014 Alexander Farkas
-Licenses: MIT/GPL2
-Source: https://github.com/aFarkas/html5shiv
-
-jQuery scrollTo, Copyright 2007-2015 Ariel Flesler
+JQuery Mobile 1.4.5, Copyright The jQuery Team
 License: MIT
-Source: https://github.com/flesler/jquery.scrollTo
+Source: https://jquerymobile.com/
 
-normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+Bootstrap 3.3.7
 License: MIT
-Source: https://necolas.github.io/normalize.css/
+Source: https://getbootstrap.com/
 
-Font Awesome icons, Copyright Dave Gandy
-License: SIL Open Font License, version 1.1.
-Source: http://fontawesome.io/
+JQuery Color 2.1.2, Copyright The jQuery Team
+License: MIT
+Source: https://github.com/jquery/jquery-color
 
-Bundled header image, Copyright Alvin Engler
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://unsplash.com/@englr?photo=bIhpiQA009k
+JQuery Waypoints, Copyright 2011-2012 Caleb Troughton
+License: MIT
+Source: https://github.com/imakewebthings/waypoints
+
+JQuery Waypoints, Copyright 2011-2012 Caleb Troughton
+License: MIT
+Source: https://github.com/imakewebthings/waypoints
+
+Velocity JS, Velocity JS UI, Copyright 2014 Julian Shapiro
+License: MIT
+Source: https://github.com/julianshapiro/velocity
 
 == Changelog ==
-
-= 1.3 =
-* Released: June 8, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.3
-
-= 1.2 =
-* Released: April 18, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.2
-
-= 1.1 =
-* Released: January 6, 2017
-
-https://codex.wordpress.org/Twenty_Seventeen_Theme_Changelog#Version_1.1
-
-= 1.0 =
-* Released: December 6, 2016
 
 Initial release
