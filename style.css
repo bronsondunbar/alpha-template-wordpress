@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 Theme Name: Alpha WordPress Theme
-Theme URI:
+Theme URI: https://bronsondunbar.com/
 Author: Bronson Dunbar
 Author URI: https://bronsondunbar.com/
 Description: Responsive personal website/blog WordPress theme created with the Bootstrap framework.
@@ -9987,6 +9987,8 @@ body {
       color: #0D3758; }
     .search input:-ms-input-placeholder {
       color: #0D3758; }
+    .search input::-ms-input-placeholder {
+      color: #0D3758; }
     .search input::placeholder {
       color: #0D3758; }
   .search a {
@@ -10161,6 +10163,9 @@ section[role="post"] {
             section[role="post"] .container .grid .item div header ul li:last-child:after {
               content: "";
               padding: 0; }
+        section[role="post"] .container .grid .item div header p {
+          width: 100%;
+          float: none; }
         section[role="post"] .container .grid .item div header span a {
           color: #06A9E1; }
           section[role="post"] .container .grid .item div header span a:hover, section[role="post"] .container .grid .item div header span a:focus {
@@ -10466,6 +10471,10 @@ section[role="all"] {
 
 .reply {
   text-align: center; }
+
+.widget {
+  list-style-type: none;
+  margin: 15px auto; }
 
 body {
   background: #0d3758;

@@ -18,17 +18,17 @@ get_header(); ?>
 <section role="all">
   <div class="container waypoint">
 
-    <?php if (is_active_sidebar('all')): ?>
+    <?php if (is_active_sidebar("all")): ?>
       <header>
-        <?php dynamic_sidebar('all'); ?>
+        <?php dynamic_sidebar("all"); ?>
       </header>
     <?php endif; ?>
     
-    <?php if (!is_active_sidebar('all')) : ?>
+    <?php if (!is_active_sidebar("all")) : ?>
       <header>
-        <h1><?php echo get_bloginfo('name'); ?></h1>
+        <h1><?php echo get_bloginfo("name"); ?></h1>
 
-        <p><?php echo get_bloginfo('description'); ?></p>
+        <p><?php echo get_bloginfo("description"); ?></p>
       </header>
     <?php endif; ?>
 

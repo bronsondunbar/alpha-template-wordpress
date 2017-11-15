@@ -23,17 +23,17 @@ get_header(); ?>
     <div class="grid">
       <div class="item">
         <div class="wrapper waypoint">
-          <?php if (is_active_sidebar('hero-1')): ?>
+          <?php if (is_active_sidebar("hero-1")): ?>
             <div>
-              <?php dynamic_sidebar('hero-1'); ?>
+              <?php dynamic_sidebar("hero-1"); ?>
             </div>
           <?php endif; ?>
           
-          <?php if (!is_active_sidebar('hero-1')) : ?>
+          <?php if (!is_active_sidebar("hero-1")): ?>
             <div>
-              <h1><?php echo get_bloginfo($show, 'name'); ?></h1>
+              <h1><?php echo get_bloginfo($show, "name"); ?></h1>
 
-              <p><?php echo get_bloginfo('description'); ?></p>
+              <p><?php echo get_bloginfo("description"); ?></p>
 
               <a href="#" class="btn btn-lg btn-default">Call to action</a>
 
@@ -44,13 +44,13 @@ get_header(); ?>
       </div>
 
       <div class="item">
-        <?php if (is_active_sidebar('hero-2')): ?>
+        <?php if (is_active_sidebar("hero-2")): ?>
           <div>
-            <?php dynamic_sidebar('hero-2'); ?>
+            <?php dynamic_sidebar("hero-2"); ?>
           </div>
         <?php endif; ?>
         
-        <?php if (!is_active_sidebar('hero-2')): ?>
+        <?php if (!is_active_sidebar("hero-2")): ?>
           <div class="hero-image">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/hero.png" class="img-responsive" />
           </div>
@@ -104,14 +104,14 @@ get_header(); ?>
 
       <div class="item">
         <div>
-          <?php if (is_active_sidebar('explore-1')): ?>
+          <?php if (is_active_sidebar("explore-1")): ?>
             
-              <?php dynamic_sidebar('explore-1'); ?>
+              <?php dynamic_sidebar("explore-1"); ?>
 
           <?php endif; ?>
           
-          <?php if (!is_active_sidebar('explore-1')) : ?>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/image-2-4x3.png" class="img-responsive" />
+          <?php if (!is_active_sidebar("explore-1")) : ?>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/explore-1.png" class="img-responsive" />
           <?php endif; ?>
         </div>
       </div>
@@ -119,13 +119,11 @@ get_header(); ?>
       <div class="item">
 
         <div>
-          <?php if (is_active_sidebar('explore-2')): ?>
-            
-              <?php dynamic_sidebar('explore-2'); ?>
-
+          <?php if (is_active_sidebar("explore-2")): ?>
+              <?php dynamic_sidebar("explore-2"); ?>
           <?php endif; ?>
           
-          <?php if (!is_active_sidebar('explore-2')) : ?>
+          <?php if (!is_active_sidebar("explore-2")) : ?>
             <h1>Aenean sollicitudin eget neque eget faucibus</h1>
 
             <p>Sed malesuada sapien sed ex rhoncus molestie. Quisque porta mauris eget nulla pulvinar cursus. Cras vulputate metus ut mauris laoreet molestie eu in velit. Nulla ipsum purus, sodales ut sapien quis, vestibulum suscipit sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>

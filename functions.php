@@ -329,6 +329,31 @@ function twentyseventeen_widgets_init() {
 		'before_title'  => '<h1>',
 		'after_title'   => '</h1>',
 	));
+
+	register_sidebar(array(
+		'name'          => __( 'Post 1', 'twentyseventeen' ),
+		'id'            => 'post-1',
+		'description'   => __( 'Add widgets here to appear on your single post page.', 'twentyseventeen' ),
+		'before_title'  => '<h1>',
+		'after_title'   => '</h1>',
+	));
+
+	register_sidebar(array(
+		'name'          => __( 'Post 2', 'twentyseventeen' ),
+		'id'            => 'post-2',
+		'description'   => __( 'Add widgets here to appear on your single post page.', 'twentyseventeen' ),
+		'before_title'  => '<h1>',
+		'after_title'   => '</h1>',
+	));
+
+	register_sidebar(array(
+		'name'          => __( 'Post 3', 'twentyseventeen' ),
+		'id'            => 'post-3',
+		'description'   => __( 'Add widgets here to appear on your single post page.', 'twentyseventeen' ),
+		'before_title'  => '<h1>',
+		'after_title'   => '</h1>',
+	));
+
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
 
