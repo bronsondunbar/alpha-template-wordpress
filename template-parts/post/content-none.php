@@ -12,22 +12,23 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
-	</header>
-	<div class="page-content">
-		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+<section role="post">
 
-			<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentyseventeen' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+	<div class="container">
 
-		<?php else : ?>
+		<header>
+			<?php display_single_post_header() ?>
+		</header>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyseventeen' ); ?></p>
-			<?php
-				get_search_form();
+		<?php if (is_active_sidebar("post-2")): ?>
+          	<?php dynamic_sidebar("post-2"); ?>
+      	<?php endif; ?>
 
-		endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+		<?php the_content(); ?>
+
+		<?php if (is_active_sidebar("post-3")): ?>
+          	<?php dynamic_sidebar("post-3"); ?>
+      	<?php endif; ?>
+	</div>
+
+</section>
