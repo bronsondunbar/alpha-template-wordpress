@@ -1,4 +1,4 @@
-=== Alpha Responsive ===
+=== Alpha WordPress Theme ===
 Contributors: Bronson Dunbar
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9-trunk
@@ -19,9 +19,9 @@ Responsive personal website/blog WordPress theme created with the Bootstrap fram
 
 == Copyright ==
 
-Alpha Responsive, Copyright 2017 Bronson Dunbar
+Alpha WordPress Theme, Copyright 2017 Bronson Dunbar
 
-Alpha Responsive bundles the following third-party resources:
+Alpha bundles the following third-party resources:
 
 JQuery 1.12.4, Copyright The jQuery Team
 Licenses: MIT

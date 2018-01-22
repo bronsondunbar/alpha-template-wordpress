@@ -67,7 +67,7 @@ get_header(); ?>
     <div id="carousel-desktop" class="carousel slide hidden-sm hidden-xs" data-interval="false" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         
-        <?php post_highlights(desktop) ?>
+        <?php get_post_highlights(desktop) ?>
 
       </div>
 

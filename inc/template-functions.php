@@ -16,7 +16,7 @@
 
 
 
-function display_logo () {
+function get_logo () {
 
 	$custom_logo_id = get_theme_mod('custom_logo');
 	$logo = wp_get_attachment_image_src($custom_logo_id , 'full');
@@ -42,7 +42,7 @@ function display_logo () {
 
 }
 
-function display_single_post_tags () {
+function get_post_tags () {
 
 	$postTags = get_the_tags();
 	$displayTags = "";
@@ -64,7 +64,7 @@ function display_single_post_tags () {
 
 }
 
-function display_single_post_excerpt ($numberOfCharacters) {
+function get_post_excerpt ($numberOfCharacters) {
 
 	$postExcerpt = get_the_excerpt();
 	$numberOfCharacters++;
@@ -89,7 +89,7 @@ function display_single_post_excerpt ($numberOfCharacters) {
 
 }
 
-function post_highlights ($screensize) {
+function get_post_highlights ($screensize) {
 
 	if ($screensize == "desktop") {
 
@@ -410,7 +410,7 @@ function post_highlights ($screensize) {
 	
 }
 
-function all_posts () {
+function get_all_posts () {
 
 	if (have_posts()) {
 
@@ -503,7 +503,7 @@ function all_posts () {
 
 }
 
-function display_single_post_header () {
+function get_post_header () {
 
 	$postHeader = "<div class='grid'>";
 
@@ -517,8 +517,8 @@ function display_single_post_header () {
 	}
 
 	$postHeader .= "<p>Posted on " . get_the_date() . " by " . get_the_author() . "</p>";
-	$postHeader .= display_single_post_tags();
-	$postHeader .= display_single_post_excerpt(140);
+	$postHeader .= get_post_tags();
+	$postHeader .= get_post_excerpt(140);
 	$postHeader .= "</header>";
 	$postHeader .= "</div>";
 	$postHeader .= "</div>";

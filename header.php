@@ -34,7 +34,7 @@
 
           	<div>
             	<ul class="nav navbar-nav">
-              		<?php display_logo() ?>
+              		<?php get_logo() ?>
             	</ul>
           	</div>
 

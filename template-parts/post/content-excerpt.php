@@ -19,7 +19,7 @@
 	<div class="container">
 
 		<header>
-			<?php display_single_post_header() ?>
+			<?php get_post_header() ?>
 		</header>
 
 		<?php if (is_active_sidebar("post-2")): ?>

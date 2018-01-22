@@ -33,7 +33,7 @@ get_header(); ?>
     <?php endif; ?>
 
     <div class="grid">
-      <?php all_posts() ?>
+      <?php get_all_posts() ?>
     </div>
 
   </div>
