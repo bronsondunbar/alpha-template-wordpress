@@ -89,7 +89,7 @@ get_header(); ?>
     <div id="carousel-mobile" class="carousel slide hidden-lg hidden-md" data-interval="false" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
 
-        <?php post_highlights(mobile) ?>
+        <?php get_post_highlights(mobile) ?>
         
       </div>
     </div>
