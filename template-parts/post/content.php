@@ -24,7 +24,10 @@
           	<?php dynamic_sidebar("post-2"); ?>
       	<?php endif; ?>
 
-		<?php the_content(); ?>
+		<?php
+			the_content();
+			get_other_posts();
+		?>
 
 		<?php if (is_active_sidebar("post-3")): ?>
           	<?php dynamic_sidebar("post-3"); ?>

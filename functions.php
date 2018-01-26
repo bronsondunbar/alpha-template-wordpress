@@ -564,7 +564,7 @@ function add_comment_author_to_reply_link($link, $args, $comment){
             $user=get_userdata($comment->user_id);
             $author=$user->user_login;
         } else {
-            $author = __('Anonymous');
+            $author = "Anonymous";
         }
     } else {
         $author = $comment->comment_author;

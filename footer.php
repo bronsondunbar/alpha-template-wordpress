@@ -22,7 +22,7 @@
 		</ul>
 	<?php endif; ?>
 
-    <p>&copy; <?php echo get_bloginfo($show, 'name'); ?></p>
+    <p>&copy; <?php echo get_bloginfo('name'); ?></p>
   </div>
 </footer>
 

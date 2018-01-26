@@ -7,6 +7,12 @@
   flex-wrap: wrap;
   margin: 15px -15px;
 
+  h1, h2, h3, h4 {
+
+    width: 100%;
+
+  }
+
   .item {
 
     display: flex;
@@ -93,6 +99,18 @@
 
   }
 
+  .next, .prev {
+
+    text-align: center;
+
+    img {
+
+      max-height: 250px;
+
+    }
+
+  }
+
   @media (max-width: $tabletPortrait) {
 
     min-width: 50%;
@@ -102,6 +120,16 @@
   @media (max-width: $mobileLargePortrait) {
 
     min-width: 100%;
+
+  }
+
+}
+
+.other-posts {
+
+  h1, h2, h3, h4 {
+
+    text-align: center;
 
   }
 

@@ -17,8 +17,8 @@ get_header(); ?>
 	<div class="container">
 
 		<header>
-			<h1><?php _e('Oops! That page can&rsquo;t be found.'); ?></h1>
-			<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
+			<h1>Oops! That page can&rsquo;t be found.></h1>
+			<p>It looks like nothing was found at this location. Maybe try a search?</p>
 		</header>
 		
 	</div>

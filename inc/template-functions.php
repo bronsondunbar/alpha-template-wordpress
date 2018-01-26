@@ -15,7 +15,6 @@
  */
 
 
-
 function get_logo () {
 
 	$custom_logo_id = get_theme_mod('custom_logo');
@@ -24,7 +23,7 @@ function get_logo () {
 	if (has_custom_logo()) {
 
 		if (get_header_textcolor()!='blank') {
-			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . esc_url($logo[0]) . "'/>" . get_bloginfo($show, 'name') . "</a></li>";
+			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . esc_url($logo[0]) . "'/>" . get_bloginfo('name') . "</a></li>";
 		} else {
 	 		echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . esc_url($logo[0]) . "'/></a></li>";
 	 	}
@@ -33,7 +32,7 @@ function get_logo () {
 	} else {
 
 		if (get_header_textcolor() != "blank") {
-			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . get_template_directory_uri() . "/assets/images/brand.png' />" . get_bloginfo($show, "name") . "</a></li>";
+			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . get_template_directory_uri() . "/assets/images/brand.png' />" . get_bloginfo("name") . "</a></li>";
 		} else {
 			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . get_template_directory_uri() . "/assets/images/brand.png' alt='" . get_the_title($post->ID) . "' /></a></li>";
 		}
@@ -553,5 +552,70 @@ function get_post_header () {
 	$postHeader .= "</div>";
 
 	echo $postHeader;
+
+}
+
+function get_other_posts () {
+
+	$prevPost = get_previous_post(true);
+	$nextPost = get_next_post(true);
+
+	$otherPosts = "<div class='grid other-posts'>";
+
+	if ($prevPost == true || $nextPost == true) {
+
+		$otherPosts .= "<h2>You might also be <span>interested</span> in</h2>";
+
+	}
+
+    if ($prevPost) {
+
+        $args = array(
+            "posts_per_page" => 1,
+            "include" => $prevPost->ID
+        );
+
+        $prevPost = get_posts($args);
+        foreach ($prevPost as $post) {
+            setup_postdata($post);
+
+	        $otherPosts .= "<div class='item prev'>";
+	        $otherPosts .= "<div>";
+	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
+	        $otherPosts .= "<h2><a href='" . get_the_permalink($post->ID) . "'>" . get_the_title($post->ID) . "</a></h2>";
+	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "' class='btn btn-default'>Read more</a>";
+	        $otherPosts .= "</div>";
+	        $otherPosts .= "</div>";
+
+            wp_reset_postdata();
+        }
+    }
+
+    if ($nextPost) {
+
+    	$args = array(
+            "posts_per_page" => 1,
+            "include" => $nextPost->ID
+        );
+
+        $nextPost = get_posts($args);
+        foreach ($nextPost as $post) {
+            setup_postdata($post);
+
+	        $otherPosts .= "<div class='item next'>";
+	        $otherPosts .= "<div>";
+	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
+	        $otherPosts .= "<h2><a href='" . get_the_permalink($post->ID) . "'>" . get_the_title($post->ID) . "</a></h2>";
+	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "' class='btn btn-default'>Read more</a>";
+	        $otherPosts .= "</div>";
+	        $otherPosts .= "</div>";
+
+            wp_reset_postdata();
+        }
+
+    }
+
+	$otherPosts .= "</div>";
+	echo $otherPosts;
 
 }

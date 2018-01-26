@@ -31,7 +31,7 @@ get_header(); ?>
           
           <?php if (!is_active_sidebar("hero-1")): ?>
             <div>
-              <h1><?php echo get_bloginfo($show, "name"); ?></h1>
+              <h1><?php echo get_bloginfo("name"); ?></h1>
 
               <p><?php echo get_bloginfo("description"); ?></p>
 
