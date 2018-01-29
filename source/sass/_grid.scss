@@ -76,12 +76,6 @@
 
     }
 
-    .btn {
-
-      width: auto;
-
-    }
-
     @media (max-width: $tabletPortrait) {
 
         min-width: 90%;
@@ -131,9 +125,35 @@
 
     text-align: center;
 
+    h1, h2, h3, h4 {
+
+      color: $darkBlue;
+
+    }
+
+    a {
+
+      color: $darkBlue;
+
+      &:hover, &:focus {
+
+        color: $lightBlue;
+
+      }
+
+    }
+
     img {
 
       max-height: 250px;
+      margin: 0 auto;
+
+    }
+
+    .btn {
+
+      width: auto;
+      color: $white;
 
     }
 

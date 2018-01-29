@@ -265,7 +265,8 @@
             list-style-type: none;
             margin: 0 -15px 0 -5px;
             padding: 0;
-            box-shadow: inset $blackShadow;
+            box-shadow: none;
+            text-align: center;
 
             .active {
 
