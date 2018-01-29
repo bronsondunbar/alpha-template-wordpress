@@ -10276,6 +10276,18 @@ section[role="all"] {
       text-align: center;
       width: 100%;
       margin: 0 0 10px; }
+    .grid .item img {
+      margin: 0; }
+    .grid .item .caption {
+      background: #333333;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px 0; }
+      .grid .item .caption .btn {
+        width: auto; }
+    .grid .item .btn {
+      width: auto; }
     @media (max-width: 768px) {
       .grid .item {
         min-width: 90%; } }

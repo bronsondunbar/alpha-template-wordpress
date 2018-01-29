@@ -54,6 +54,34 @@
 
     }
 
+    img {
+
+      margin: 0;
+
+    }
+
+    .caption {
+
+      background: $gray;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      padding: 15px 0;
+
+      .btn {
+
+        width: auto;
+
+      }
+
+    }
+
+    .btn {
+
+      width: auto;
+
+    }
+
     @media (max-width: $tabletPortrait) {
 
         min-width: 90%;
