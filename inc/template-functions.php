@@ -29,14 +29,6 @@ function get_logo () {
 	 	}
 
 	    
-	} else {
-
-		if (get_header_textcolor() != "blank") {
-			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . get_template_directory_uri() . "/assets/images/brand.png' />" . get_bloginfo("name") . "</a></li>";
-		} else {
-			echo "<li><a class='navbar-brand' href='" . get_home_url() . "'><img src='" . get_template_directory_uri() . "/assets/images/brand.png' alt='" . get_the_title($post->ID) . "' /></a></li>";
-		}
-
 	}
 
 }
