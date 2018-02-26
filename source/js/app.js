@@ -8,14 +8,14 @@
 // @codekit-prepend 'lib/velocity.ui.js'
 
 
-// @codekit-prepend 'templateNavbar.js'
-// @codekit-prepend 'templateAccordion.js'
-// @codekit-prepend 'templateCarousel.js'
-// @codekit-prepend 'templateSearchBar.js'
-// @codekit-prepend 'templateScrollReveal.js'
-// @codekit-prepend 'templateFilter.js'
-// @codekit-prepend 'templateWordPress.js'
-// @codekit-prepend 'templatePostCard.js'
+// @codekit-prepend 'functions/templateNavbar.js'
+// @codekit-prepend 'functions/templateAccordion.js'
+// @codekit-prepend 'functions/templateCarousel.js'
+// @codekit-prepend 'functions/templateSearchBar.js'
+// @codekit-prepend 'functions/templateScrollReveal.js'
+// @codekit-prepend 'functions/templateFilter.js'
+// @codekit-prepend 'functions/templateWordPress.js'
+// @codekit-prepend 'functions/templatePostCard.js'
 
 $(document).ready(function () {
 
