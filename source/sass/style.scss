@@ -382,7 +382,7 @@ header {
 	img {
 
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto !important;
 		width: 72%;
 
 		@media (max-width: $tabletPortrait) {
