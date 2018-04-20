@@ -10094,6 +10094,8 @@ section[role="default"] {
     color: #ffffff; }
   section[role="default"] .container .grid .item .wrapper div p {
     color: #ffffff; }
+  section[role="default"] .container .grid .item .wrapper div .btn {
+    width: auto; }
   @media (max-width: 425px) {
     section[role="default"] .container .grid {
       min-height: 100vh; } }

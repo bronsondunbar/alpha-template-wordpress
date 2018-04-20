@@ -35,9 +35,9 @@ get_header(); ?>
 
               <p><?php echo get_bloginfo("description"); ?></p>
 
-              <a href="#" class="btn btn-lg btn-default">Call to action</a>
+              <p><a href="#" class="btn btn-lg btn-default">Quisque porta</a></p>
 
-              <p><a href="#" id="register">Extra link</a></p>
+              <p><a href="#" id="register">Vulputate metus</a></p>
             </div>
           <?php endif; ?>
         </div>
