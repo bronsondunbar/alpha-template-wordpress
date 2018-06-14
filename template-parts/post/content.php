@@ -21,8 +21,8 @@
 		</header>
 
 		<?php if (is_active_sidebar("post-2")): ?>
-          	<?php dynamic_sidebar("post-2"); ?>
-      	<?php endif; ?>
+      <?php dynamic_sidebar("post-2"); ?>
+  	<?php endif; ?>
 
 		<?php
 			the_content();
@@ -30,8 +30,8 @@
 		?>
 
 		<?php if (is_active_sidebar("post-3")): ?>
-          	<?php dynamic_sidebar("post-3"); ?>
-      	<?php endif; ?>
+	    <?php dynamic_sidebar("post-3"); ?>
+		<?php endif; ?>
 	</div>
 
 </section>

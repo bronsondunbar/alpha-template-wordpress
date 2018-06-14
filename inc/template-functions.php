@@ -127,7 +127,9 @@ function get_post_highlights ($screensize) {
 			        		$postHighlights .= "<div class='item post'>";
 
 			        		$postHighlights .= "<a href='" . get_permalink() . "'>";
-				      		$postHighlights .= "<div class='post-image'><i class='fa fa-4x fa-picture-o' aria-hidden='true'></i></div>";
+
+				      		$postHighlights .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
+
 				      		$postHighlights .= "</a>";
 
 				      		$postHighlights .= "<div class='post-caption'>";
@@ -174,9 +176,7 @@ function get_post_highlights ($screensize) {
 
 			        		$postHighlights .= "<div class='item post'>";
 				      		$postHighlights .= "<a href='" . get_permalink() . "'>";
-
 				      		$postHighlights .= "<img src='" . get_the_post_thumbnail_url() . "' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
-
 				      		$postHighlights .= "</a>";
 				      		$postHighlights .= "<div class='post-caption'>";
 				          	$postHighlights .= "<h4>" . get_the_title($post->ID) . "</h4>";
@@ -194,7 +194,7 @@ function get_post_highlights ($screensize) {
 			        		$postHighlights .= "<div class='item post'>";
 
 			        		$postHighlights .= "<a href='" . get_permalink() . "'>";
-				      		$postHighlights .= "<div class='post-image'><i class='fa fa-4x fa-picture-o' aria-hidden='true'></i></div>";
+				      		$postHighlights .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
 				      		$postHighlights .= "</a>";
 
 				      		$postHighlights .= "<div class='post-caption'>";
@@ -261,7 +261,7 @@ function get_post_highlights ($screensize) {
 			        		$postHighlights .= "<div class='item post'>";
 
 			        		$postHighlights .= "<a href='" . get_permalink() . "'>";
-				      		$postHighlights .= "<div class='post-image'><i class='fa fa-4x fa-picture-o' aria-hidden='true'></i></div>";
+				      		$postHighlights .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
 				      		$postHighlights .= "</a>";
 
 				      		$postHighlights .= "<div class='post-caption'>";
@@ -352,7 +352,7 @@ function get_post_highlights ($screensize) {
 		        		$postHighlights .= "<div class='post'>";
 
 		        		$postHighlights .= "<a href='" . get_permalink() . "'>";
-			      		$postHighlights .= "<div class='post-image'><i class='fa fa-4x fa-picture-o' aria-hidden='true'></i></div>";
+			      		$postHighlights .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
 			      		$postHighlights .= "</a>";
 
 			      		$postHighlights .= "<div class='post-caption'>";
@@ -454,7 +454,7 @@ function get_all_posts () {
 			      		$postHighlights .= "<a href='" . get_permalink() . "'>";
 
 		        		$postHighlights .= "<a href='" . get_permalink() . "'>";
-			      		$postHighlights .= "<div class='post-image'><i class='fa fa-4x fa-picture-o' aria-hidden='true'></i></div>";
+			      		$postHighlights .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
 			      		$postHighlights .= "</a>";
 
 			      		$postHighlights .= "</a>";
@@ -573,6 +573,13 @@ function get_other_posts () {
 
 	        $otherPosts .= "<div class='item prev'>";
 	        $otherPosts .= "<div>";
+
+	        if (get_the_post_thumbnail() !== "") {
+	        	$otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
+	        } else {
+	        	$otherPosts .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
+	        }
+
 	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
 	        $otherPosts .= "<h2><a href='" . get_the_permalink($post->ID) . "'>" . get_the_title($post->ID) . "</a></h2>";
 	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "' class='btn btn-default'>Read more</a>";
@@ -596,7 +603,11 @@ function get_other_posts () {
 
 	        $otherPosts .= "<div class='item next'>";
 	        $otherPosts .= "<div>";
-	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
+	        if (get_the_post_thumbnail() !== "") {
+	        	$otherPosts .= "<a href='" . get_the_permalink($post->ID) . "'><img src='" . get_the_post_thumbnail_url($post->ID) . "' class='img-responsive' /></a>";
+	       } else {
+	        	$otherPosts .= "<img src='http://via.placeholder.com/1920x1080/262626/ffffff' class='img-responsive' alt='" . get_the_title($post->ID) . "' />";
+	        }
 	        $otherPosts .= "<h2><a href='" . get_the_permalink($post->ID) . "'>" . get_the_title($post->ID) . "</a></h2>";
 	        $otherPosts .= "<a href='" . get_the_permalink($post->ID) . "' class='btn btn-default'>Read more</a>";
 	        $otherPosts .= "</div>";
